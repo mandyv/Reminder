@@ -1,0 +1,10 @@
+<% provide(:post_title, "All Posts") %>
+<% provide(:blog_active, "active") %>
+
+<div class="row">
+  <% @posts.each do |post| %>
+    <%= render post %>
+  <% end %>
+</div>
+
+<%= link_to "Create a Reminder", new_post_path %>

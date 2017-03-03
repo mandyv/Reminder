@@ -1,0 +1,9 @@
+<% provide(:page_title, @post.title) %>
+<% provide(:blog_title, "active") %>
+<div class="jumbotron">
+	<h1>New Reminder</h1>
+
+	<%= render 'form', post: @post %>
+
+	<%= link_to 'Back', posts_path %>
+</div>
