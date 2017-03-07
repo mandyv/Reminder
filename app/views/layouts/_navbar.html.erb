@@ -3,13 +3,7 @@
 		<div class="card">
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">
-					<%= link_to "Blog", root_path, class: "nav-link #{yield(:blog_active)}" %>
-				</li>
-				<li class="list-group-item">
-					<%= link_to "About", contact_path, class: "nav-link #{yield(:about_active)}" %>
-				</li>
-				<li class="list-group-item">
-					<%= link_to "Contact", root_path, class: "nav-link #{yield(:contact_active)}" %>
+					<%= link_to "Home", root_path, class: "nav-link #{yield(:blog_active)}" %>
 				</li>
 			</ul>
 		</div>
@@ -19,20 +13,17 @@
 <nav class="navbar navbar-light bg-faded">
 	<div class="container">
 		<a class="navbar-brand" href="/">
-			Reminder<span class="light">blog</span>
+			Nex<span class="light">Time</span>
 		</a>
 		<button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
 			&#99776;
 			</button>
 			<ul class="nav navbar-new pull-sm-right hidden-xs-down">
 				<li class="nav-item">
-					<%= link_to "Blog", root_path, class: "nav-link #{yield(:blog_active)}" %>
+					<%= link_to "Home", root_path, class: "nav-link #{yield(:home_active)}" %>
 				</li>
 				<li class="nav-item">
-					<%= link_to "About", root_path, class: "nav-link #{yield(:about_active)}" %>
-				</li>
-				<li class="nav-item">
-					<%= link_to "Contact", root_path, class: "nav-link #{yield(:contact_active)}" %>
+					<%= link_to "Logout", logout_path, method: :delete, class: "nav-link #{yield(:logout_active)}" %>
 				</li>
 			</ul>
 	</div>

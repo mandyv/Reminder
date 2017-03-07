@@ -1,23 +1,23 @@
-<% provide(:page_title, @post.title) %>
+<% provide(:page_title, @post.restaurant) %>
 <% provide(:blog_active, "active") %>
 
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @post.title %>
+  <strong>Restaurant:</strong>
+  <%= @post.restaurant %>
 </p>
 
 <p>
-  <strong>Body:</strong>
-  <%= @post.body %>
+  <strong>Review:</strong>
+  <%= @post.review %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @post.description %>
+  <strong>NEXTIME:</strong>
+  <%= @post.nextime %>
 </p>
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Back', posts_path %> 
